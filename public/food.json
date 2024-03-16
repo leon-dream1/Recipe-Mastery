@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Garlic Butter Shrimp Pasta",
+      "recipe_image": "https://i.ibb.co/QjNWy5q/download.jpg",
+      "short_description": "Deliciously creamy pasta with succulent garlic butter shrimp.",
+      "ingredients": ["300g pasta", "250g shrimp", "4 cloves garlic", "50g butter", "1/4 cup heavy cream", "Salt and pepper to taste"],
+      "preparing_time": 25,
+      "calories": 380
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Caprese Salad",
+      "recipe_image": "https://i.ibb.co/pymRcLB/download-1.jpg",
+      "short_description": "A classic Italian salad bursting with fresh flavors of tomatoes, mozzarella, and basil.",
+      "ingredients": ["2 large tomatoes", "200g fresh mozzarella", "1/4 cup fresh basil leaves", "2 tbsp balsamic glaze", "2 tbsp olive oil", "Salt and pepper to taste"],
+      "preparing_time": 15,
+      "calories": 250
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Vegetable Stir-Fry",
+      "recipe_image": "https://i.ibb.co/DpykSyb/download-2.jpg",
+      "short_description": "A colorful medley of vegetables stir-fried to perfection in a savory sauce.",
+      "ingredients": ["1 red bell pepper", "1 yellow bell pepper", "1 green bell pepper", "200g snap peas", "1 carrot", "1 broccoli head", "3 tbsp soy sauce", "2 tbsp sesame oil", "2 cloves garlic", "1 tsp ginger", "Salt and pepper to taste"],
+      "preparing_time": 20,
+      "calories": 180
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "BBQ Chicken Pizza",
+      "recipe_image": "https://i.ibb.co/3v64snC/download-3.jpg",
+      "short_description": "A mouthwatering pizza topped with tender BBQ chicken, red onions, and gooey cheese.",
+      "ingredients": ["1 pre-made pizza dough", "1 cup cooked chicken", "1/2 cup BBQ sauce", "1/4 cup red onion", "1 cup shredded mozzarella cheese", "1/4 cup fresh cilantro"],
+      "preparing_time": 30,
+      "calories": 320
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Mango Avocado Salsa",
+      "recipe_image": "https://i.ibb.co/Ld3s9wL/download-4.jpg",
+      "short_description": "A refreshing salsa bursting with the flavors of ripe mangoes, creamy avocado, and zesty lime.",
+      "ingredients": ["2 ripe mangoes", "2 ripe avocados", "1/4 cup red onion", "1 jalapeno", "1/4 cup fresh cilantro", "Juice of 2 limes", "Salt and pepper to taste"],
+      "preparing_time": 10,
+      "calories": 120
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Creamy Mushroom Risotto",
+      "recipe_image": "https://i.ibb.co/j5vPnxp/download-5.jpg",
+      "short_description": "Indulge in this luxurious risotto infused with the earthy flavors of mushrooms and creamy Parmesan cheese.",
+      "ingredients": ["1 cup Arborio rice", "200g mushrooms", "1/2 cup dry white wine", "4 cups chicken or vegetable broth", "1/4 cup grated Parmesan cheese", "2 tbsp butter", "2 cloves garlic", "1/4 cup chopped parsley", "Salt and pepper to taste"],
+      "preparing_time": 35,
+      "calories": 350
+    }
+  ]
+  
