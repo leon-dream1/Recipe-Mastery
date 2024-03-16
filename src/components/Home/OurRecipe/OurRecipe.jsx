@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Food from "../Food/Food";
 import CookingTable from "../CookingTable/CookingTable";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 const OurRecipe = () => {
   const [foods, setFoods] = useState([]);
@@ -13,11 +15,25 @@ const OurRecipe = () => {
 
   const [selectedFood, setSelectedFood] = useState([]);
 
-  const handleSelectedFood = (food) => {
-    const newFood = [...selectedFood, food];
-    setSelectedFood(newFood);
+  const handleSelectedFood = (chooseFood) => {
+    const isAlreadySelected = selectedFood.find(
+      (food) => food.recipe_id === chooseFood.recipe_id
+    );
+    if (isAlreadySelected) {
+      toast.error("Already Selected");
+    } else {
+      const newFood = [...selectedFood, chooseFood];
+      setSelectedFood(newFood);
+      toast.success("Successfully Added!");
+    }
   };
-  console.log(selectedFood);
+
+  const [currentlyCooking, setCurrentlyCooking] = useState([]);
+
+  const handlePreparing = food => {
+    const newCurrentlyCookingFood = { ...currentlyCooking, food };
+    setCurrentlyCooking(newCurrentlyCookingFood);
+  };
 
   return (
     <div className="container mx-auto my-[100px]">
@@ -45,9 +61,14 @@ const OurRecipe = () => {
           </div>
         </div>
         <div className="">
-          <CookingTable selectedFood={selectedFood}/>
+          <CookingTable
+            selectedFood={selectedFood}
+            currentlyCooking={currentlyCooking}
+            handlePreparing={handlePreparing}
+          />
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
