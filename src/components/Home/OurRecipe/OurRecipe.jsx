@@ -31,12 +31,10 @@ const OurRecipe = () => {
   const [currentlyCooking, setCurrentlyCooking] = useState([]);
 
   const handlePreparing = (prepareFood) => {
-    console.log("prepare",prepareFood);
     const newCurrentlyCookingFood = [ ...currentlyCooking, prepareFood ];
     setCurrentlyCooking(newCurrentlyCookingFood);
 
     const remainingSelectedFood = selectedFood.filter((food) => food.recipe_id !== prepareFood.recipe_id);
-    console.log("remaining",remainingSelectedFood);
     setSelectedFood(remainingSelectedFood);
   };
 

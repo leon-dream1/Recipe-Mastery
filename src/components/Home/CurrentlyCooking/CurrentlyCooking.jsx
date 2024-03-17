@@ -40,8 +40,8 @@ const CurrentlyCooking = ({ currentlyCooking }) => {
             <tr>
               <td></td>
               <td></td>
-              <td>Total time: {totalTime}</td>
-              <td>Total calories: {totalCalories}</td>
+              <td>Total time: {totalTime} min</td>
+              <td>Total calories: {totalCalories} calorie</td>
             </tr>
           </tbody>
         </table>
