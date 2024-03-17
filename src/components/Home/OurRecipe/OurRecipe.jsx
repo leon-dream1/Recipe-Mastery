@@ -20,7 +20,7 @@ const OurRecipe = () => {
       (food) => food.recipe_id === chooseFood.recipe_id
     );
     if (isAlreadySelected) {
-      toast.error("Already Selected");
+      toast.error("Already Exists!!!!!");
     } else {
       const newFood = [...selectedFood, chooseFood];
       setSelectedFood(newFood);

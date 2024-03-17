@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'banner-image': "url('./src/assets/images/banner1.jpg')",
+        'banner-image': "url('./public/images/banner1.jpg')",
         // 'footer-texture': "url('/img/footer-texture.png')",
       }
     },

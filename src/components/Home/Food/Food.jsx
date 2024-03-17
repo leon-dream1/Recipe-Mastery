@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-import timer from "../../../assets/images/time.png";
-import calorie from "../../../assets/images/calorie.png";
+import timer from "../../../../public/images/time.png";
+import calorie from "../../../../public/images/calorie.png";
 
 const Food = ({ food, handleSelectedFood }) => {
   const {

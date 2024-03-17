@@ -78,7 +78,6 @@ const Navbar = () => {
               </svg>
               <input type="text" className="grow" placeholder="Search" />
             </label>
-            {/* <img src={people} alt="" className='w-[32px] h-[32px] bg-green-500' /> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
