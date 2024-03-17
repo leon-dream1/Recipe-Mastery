@@ -42,10 +42,10 @@ const OurRecipe = () => {
 
   return (
     <div className="container mx-auto my-[100px]">
-      <h4 className="text-[#150B2B] text-[40px] font-semibold text-center mb-6">
+      <h4 className="text-[#150B2B] text-xl lg:text-[40px] font-semibold text-center mb-6">
         Our Recipes
       </h4>
-      <p className="w-[70%] mx-auto text-center text-[#150B2B99] text-[16px] font-normal">
+      <p className="w-[100%] lg:w-[70%] lg:mx-auto text-center text-[#150B2B99] text-[16px] font-normal">
         Explore our diverse selection of recipes, featuring vibrant images,
         detailed ingredients lists, and helpful cooking tips. Whether you are
         cooking for a special occasion or simply craving a delicious homemade
@@ -53,9 +53,9 @@ const OurRecipe = () => {
         inspiration.
       </p>
 
-      <div className="grid grid-cols-3 gap-6 mt-[48px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 m-4 gap-y-6 lg:gap-y-0 lg:gap-6 mt-[48px]">
         <div className="col-span-2">
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {foods.map((food) => (
               <Food
                 key={food.recipe_id}
@@ -65,7 +65,7 @@ const OurRecipe = () => {
             ))}
           </div>
         </div>
-        <div className="">
+        <div >
           <CookingTable
             selectedFood={selectedFood}
             currentlyCooking={currentlyCooking}

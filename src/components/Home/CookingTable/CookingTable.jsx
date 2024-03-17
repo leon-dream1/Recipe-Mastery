@@ -28,7 +28,7 @@ const CookingTable = ({ selectedFood, handlePreparing, currentlyCooking }) => {
                 <td>{food.calories} calories</td>
                 <button
                   onClick={() => handlePreparing(food)}
-                  className="px-[10px] py-[10px] rounded-[40px] bg-[#0BE58A] text-[14px] text-[#150B2B] font-semibold"
+                  className="px-1 lg:px-[10px] py-1 lg:py-[10px] rounded-[40px] bg-[#0BE58A] text-[14px] text-[#150B2B] font-semibold"
                 >
                   Preparing
                 </button>
