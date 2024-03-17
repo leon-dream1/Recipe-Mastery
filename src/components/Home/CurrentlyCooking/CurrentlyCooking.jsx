@@ -1,10 +1,21 @@
 import PropTypes from "prop-types";
 
-const CurrentlyCooking = ({currentlyCooking}) => {
+const CurrentlyCooking = ({ currentlyCooking }) => {
+  console.log(currentlyCooking);
+
+  const totalTime = currentlyCooking.reduce(
+    (prev, current) => prev + current.preparing_time,
+    0
+  );
+
+  const totalCalories = currentlyCooking.reduce(
+    (prev, current) => prev + current.calories,
+    0
+  );
   return (
-    <div className="">
+    <div className="mt-12">
       <h2 className=" text-[#282828] text-[24px] font-semibold text-center pb-2 border-b border-[#2828281A]">
-        Want to Cook: {currentlyCooking.length}
+        Currently Cooking: {currentlyCooking.length}
       </h2>
 
       <div className="overflow-x-auto">
@@ -26,6 +37,12 @@ const CurrentlyCooking = ({currentlyCooking}) => {
                 <td>{food.calories} calories</td>
               </tr>
             ))}
+            <tr className="">
+              <td></td>
+              <td></td>
+              <td>Total time: {totalTime}</td>
+              <td>Total calories: {totalCalories}</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -34,7 +51,7 @@ const CurrentlyCooking = ({currentlyCooking}) => {
 };
 
 CurrentlyCooking.propTypes = {
-    currentlyCooking: PropTypes.array,
-  };
+  currentlyCooking: PropTypes.array,
+};
 
 export default CurrentlyCooking;

@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import CurrentlyCooking from "../CurrentlyCooking/CurrentlyCooking";
+// import CurrentlyCooking from "../CurrentlyCooking/CurrentlyCooking";
 
 const CookingTable = ({ selectedFood, handlePreparing, currentlyCooking }) => {
   return (
@@ -36,7 +37,8 @@ const CookingTable = ({ selectedFood, handlePreparing, currentlyCooking }) => {
           </tbody>
         </table>
       </div>
-      <CurrentlyCooking currentlyCooking = {currentlyCooking}/>
+
+      <CurrentlyCooking currentlyCooking={currentlyCooking}/>
     </div>
   );
 };
