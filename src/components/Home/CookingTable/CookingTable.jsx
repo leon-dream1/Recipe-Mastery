@@ -22,7 +22,7 @@ const CookingTable = ({ selectedFood, handlePreparing, currentlyCooking }) => {
             {selectedFood.map((food, idx) => (
               <tr key={food.recipe_id} className="bg-base-200">
                 <th>{idx + 1}</th>
-                <td>{food.recipe_name}</td>
+                <td className="text-[12px]">{food.recipe_name}</td>
                 <td>{food.preparing_time} min</td>
                 <td>{food.calories} calories</td>
                 <button

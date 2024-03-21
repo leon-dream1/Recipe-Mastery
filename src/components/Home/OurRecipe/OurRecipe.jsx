@@ -40,10 +40,10 @@ const OurRecipe = () => {
 
   return (
     <div className="container mx-auto my-[100px]">
-      <h4 className="text-[#150B2B] text-xl lg:text-[40px] font-semibold text-center mb-6">
+      <h4 className="text-xl lg:text-[40px] font-semibold text-center mb-6">
         Our Recipes
       </h4>
-      <p className="w-[100%] lg:w-[70%] lg:mx-auto text-center text-[#150B2B99] text-[16px] font-normal">
+      <p className="w-[100%] lg:w-[70%] lg:mx-auto text-center text-[16px] font-normal">
         Explore our diverse selection of recipes, featuring vibrant images,
         detailed ingredients lists, and helpful cooking tips. Whether you are
         cooking for a special occasion or simply craving a delicious homemade
